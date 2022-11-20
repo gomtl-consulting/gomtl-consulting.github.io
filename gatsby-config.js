@@ -1,3 +1,6 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   plugins: [
     {
@@ -5,7 +8,7 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    siteTitle: `Gomtl.`,
+    siteTitle: `Gomtl Consulting`,
     siteTitleAlt: `Gomtl.`,
     siteHeadline: `Gomtl.`,
     siteUrl: `https://gomtlconsulting.com`,
@@ -14,4 +17,4 @@ module.exports = {
     // Used for og:image and must be placed inside the `static` folder
     siteImage: `/banner.jpg`,
   },
-}
+};
