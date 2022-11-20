@@ -16,6 +16,7 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "@lekoarts/gatsby-theme-cara": "^1.2.19",
     "gatsby": "^2.26.1",
     "react": "^16.13.1",
