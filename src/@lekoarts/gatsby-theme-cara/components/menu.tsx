@@ -14,7 +14,7 @@ export default function Menu(props: MenuProps) {
         <button onClick={props.scrollToProjects}>Our Work</button>
       </li>
       <li>
-        <button onClick={props.scrollToAbout}>Our Team &amp; Expertise</button>
+        <button onClick={props.scrollToAbout}>Our Team</button>
       </li>
       <li>
         <button className="contact" onClick={props.scrollToContact}>
