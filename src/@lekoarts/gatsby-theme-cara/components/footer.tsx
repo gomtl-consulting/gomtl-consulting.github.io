@@ -36,13 +36,11 @@ const Footer = () => {
           a: { color: `text` },
         }}
       >
-        <div sx={{ mx: 1 }}>Theme based on</div>
-        {` `}
         <Link
           aria-label="Link to the theme author's website"
           href="https://www.lekoarts.de/en"
         >
-          LekoArts
+          LekoArts theme
         </Link>
         , customized by Gomtl.
       </Flex>
