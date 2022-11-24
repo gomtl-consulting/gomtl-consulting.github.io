@@ -11,7 +11,7 @@ export default function Cara() {
   const ref = useRef<Parallax>(null);
 
   function scrollToProjects() {
-    ref.current?.scrollTo(1.4);
+    ref.current?.scrollTo(1);
   }
 
   function scrollToAbout() {

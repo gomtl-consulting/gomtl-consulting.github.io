@@ -39,6 +39,7 @@ const Footer = () => {
         <Link
           aria-label="Link to the theme author's website"
           href="https://www.lekoarts.de/en"
+          target="_blank"
         >
           LekoArts theme
         </Link>
