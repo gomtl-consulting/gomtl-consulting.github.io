@@ -8,8 +8,12 @@ import {
   UpDown,
   UpDownWide,
 } from '@lekoarts/gatsby-theme-cara/src/styles/animations';
+
+import blaxpoImg from '../../../assets/blaxpo.gif';
+import cnaImg from '../../../assets/cna-classes.gif';
 // @ts-ignore
 import ProjectsMDX from '../sections/projects';
+import ProjectDetails from './projectDetails';
 
 const Projects = ({
   offset,
@@ -36,6 +40,23 @@ const Projects = ({
             h2: { gridColumn: `-1/1` },
           }}
         >
+          <ProjectDetails
+            name="CNA Classes For Me"
+            img={cnaImg}
+            link="https://cnaclassesforme.com"
+            challenge="Connect potential nursing students with relevant, verified schools across the United States"
+            solution="Full-fledged directory for nursing schools with approval process."
+            techStack="ReactJS, NextJS, Google Cloud Platform, Firebase, TypeScript, CSS."
+          />
+          <ProjectDetails
+            altPosition
+            name="BLAXPO"
+            img={blaxpoImg}
+            link="https://blaxpo.ca"
+            challenge="Build novel user interface letting job candidates interact with potential employers."
+            solution="Tinder-style swipe-to-match game for national career fair."
+            techStack="ReactJS, Animation, TypeScript, Github Actions."
+          />
           <ProjectsMDX />
         </div>
       </Inner>
