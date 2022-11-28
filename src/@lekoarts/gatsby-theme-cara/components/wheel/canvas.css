@@ -3,27 +3,24 @@
 }
 
 .wheel-container {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 768px;
-  height: 768px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 800px;
 }
 
-#status_label {
-  position: absolute;
-  top: 768px;
-  width: 768px;
-  color: black;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.wheel-container .status-label {
+  color: #ec63a6;
   font-size: 1.5em;
+  font-weight: bold;
   text-align: center;
   pointer-events: none;
+  width: 300px;
 }
 
-#drawing_canvas {
-  position: absolute;
+.wheel-container canvas {
+  width: 350px;
+  height: 350px;
 }

@@ -17,20 +17,24 @@ function Cara() {
     ref.current?.scrollTo(1);
   }
 
-  function scrollToAbout() {
+  function scrollToFreebies() {
     ref.current?.scrollTo(3);
   }
 
-  function scrollToContact() {
+  function scrollToAbout() {
     ref.current?.scrollTo(4);
+  }
+
+  function scrollToContact() {
+    ref.current?.scrollTo(5);
   }
 
   return (
     <Layout>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/p2.js/0.6.0/p2.min.js"></script>
       <Menu
         scrollToAbout={scrollToAbout}
         scrollToContact={scrollToContact}
+        scrollToFreebies={scrollToFreebies}
         scrollToProjects={scrollToProjects}
       />
       <Parallax pages={6} ref={ref}>

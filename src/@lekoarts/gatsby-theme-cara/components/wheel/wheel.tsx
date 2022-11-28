@@ -131,7 +131,7 @@ export default function Wheel({
       </Divider>
       <Content speed={0.4} offset={offset} factor={factor}>
         <Inner>
-          <h1>Win a free tip!</h1>
+          <h1>Have a free tip, on us</h1>
           <WheelCanvas />
         </Inner>
       </Content>

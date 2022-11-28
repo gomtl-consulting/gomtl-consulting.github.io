@@ -4,6 +4,7 @@ import './menu.css';
 interface MenuProps {
   scrollToAbout: () => void;
   scrollToContact: () => void;
+  scrollToFreebies: () => void;
   scrollToProjects: () => void;
 }
 
@@ -12,6 +13,9 @@ export default function Menu(props: MenuProps) {
     <ul className="menu">
       <li>
         <button onClick={props.scrollToProjects}>Our Work</button>
+      </li>
+      <li>
+        <button onClick={props.scrollToFreebies}>Freebies</button>
       </li>
       <li>
         <button onClick={props.scrollToAbout}>Our Team</button>
