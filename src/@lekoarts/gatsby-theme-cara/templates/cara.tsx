@@ -1,14 +1,16 @@
-import React, { useRef } from 'react';
-import { Parallax } from 'react-spring/renderprops-addons.cjs';
+import * as React from 'react';
+import type { HeadFC } from 'gatsby';
+import { Parallax } from '@react-spring/parallax';
 import Layout from '@lekoarts/gatsby-theme-cara/src/components/layout';
 import Hero from '@lekoarts/gatsby-theme-cara/src/components/hero';
-import Projects from '@lekoarts/gatsby-theme-cara/src/components/projects';
+import Projects from '../components/projects';
 import About from '@lekoarts/gatsby-theme-cara/src/components/about';
-import Contact from '@lekoarts/gatsby-theme-cara/src/components/contact';
+import Contact from '../components/contact';
+import Seo from '@lekoarts/gatsby-theme-cara/src/components/seo';
 import Menu from '../components/menu';
 
-export default function Cara() {
-  const ref = useRef<Parallax>(null);
+function Cara() {
+  const ref = React.useRef<Parallax>(null);
 
   function scrollToProjects() {
     ref.current?.scrollTo(1);
@@ -38,3 +40,7 @@ export default function Cara() {
     </Layout>
   );
 }
+
+export default Cara;
+
+export const Head: HeadFC = () => <Seo />;
