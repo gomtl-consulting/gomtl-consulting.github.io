@@ -1,0 +1,26 @@
+.wheel-outer {
+  position: relative;
+}
+
+.wheel-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 800px;
+}
+
+.wheel-container .status-label {
+  color: #ec63a6;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+  width: 300px;
+}
+
+.wheel-container canvas {
+  width: 350px;
+  height: 350px;
+}
