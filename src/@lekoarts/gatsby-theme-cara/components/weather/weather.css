@@ -1,0 +1,57 @@
+h1 small {
+  font-size: 0.6em;
+}
+
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.weather-div {
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  flex-grow: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.weather-render {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.temp-number {
+  font-size: 4rem;
+}
+
+.temp-selector {
+  background: none;
+  box-shadow: none;
+  color: grey;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin: 22px 0 0;
+}
+
+.temp-selector span {
+  border-bottom: 2px solid transparent;
+  padding: 2px;
+}
+
+.temp-selector span.selected {
+  border-bottom-color: black;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  .weather-app {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
